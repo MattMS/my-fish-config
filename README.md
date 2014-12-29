@@ -18,6 +18,6 @@ This configuration has only been used on [Lubuntu](http://lubuntu.net/).
 
 ### .gitignore
 
-`fishd.*` and `fish_history` are ignored so this repo can be linked into 
+`fishd.*` and `fish_history` are ignored so this repo can be linked into
 the normal Fish config area (`~/.config/fish`) and ignore the
 automatically created files.
