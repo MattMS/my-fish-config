@@ -11,6 +11,31 @@ before creating this link:
 	ln -s my_fish_config ~/Documents/.config/fish
 
 
+## Functions
+
+### f
+
+	f a/b/c
+
+Creates the folders and then moves into that folder.
+
+
+### gitg, gitp, gits
+
+`gitg` (git get) is `git pull`.
+
+`gitp` is `git push`.
+
+`gits` is `git status`.
+
+
+### up
+
+`up` with do `cd ..` once.
+
+`up 3` with do `cd ..` 3 times.
+
+
 ## FYI
 
 This configuration has only been used on [Lubuntu](http://lubuntu.net/).
