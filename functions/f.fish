@@ -2,5 +2,5 @@
 
 function f
 	mkdir -p $argv
-	cd $argv
+	pushd $argv
 end
