@@ -13,12 +13,14 @@ before creating this link:
 
 ## Functions
 
-### f
+### f and b
 
 	f a/b/c
 
-Creates the folders and then moves into the final folder with `pushd`.
-This allows returning to the current folder with `popd`.
+Creates the folders and then moves into the final folder.
+The current path is saved (with `pushd`) before moving.
+
+`b` uses `popd` to return to the previous folder.
 
 
 ### gitg, gitp, gits
