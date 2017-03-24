@@ -3,6 +3,15 @@
 My configuration files for [Fish](http://fishshell.com/).
 
 
+## Installing Fish on Ubuntu
+
+From [Launchpad for Ubuntu](https://launchpad.net/~fish-shell/+archive/ubuntu/release-2):
+
+	sudo apt-add-repository ppa:fish-shell/release-2
+	sudo apt-get update
+	sudo apt-get install fish
+
+
 ## Setup
 
 You should delete or move the folder at `~/Documents/.config/fish`
