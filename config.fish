@@ -1,11 +1,27 @@
-set -U EDITOR vim
+#!/usr/bin/env fish
 
-set -x GOPATH $HOME/go
-set -x GOROOT $HOME/go/1.9
-
-# Set PATH so it includes user's private bin if it exists.
-if test -d $HOME/bin
-	set -x PATH $HOME/bin $PATH
+function append_to_path
+	for item in $argv
+		if test -d $item
+			set -x PATH $PATH $item
+		end
+	end
 end
 
-set -x PATH $PATH $GOPATH/bin $GOROOT/bin $HOME/.cabal/bin /opt/cabal/2.0/bin /opt/ghc/8.2.1/bin
+function prepend_to_path
+	for item in $argv
+		if test -d $item
+			set -x PATH $item $PATH
+		end
+	end
+end
+
+
+set -U EDITOR vim
+
+set -x GOPATH /app/go
+set -x GOROOT /app/go/1.9
+
+prepend_to_path $HOME/bin
+
+append_to_path $GOPATH/bin $GOROOT/bin $HOME/.cabal/bin /opt/cabal/2.0/bin /opt/ghc/8.2.1/bin
