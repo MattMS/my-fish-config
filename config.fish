@@ -19,7 +19,7 @@ end
 
 set -U EDITOR vim
 
-set -x GOPATH /app/go
+set -x GOPATH $HOME/go
 set -x GOROOT /app/go/1.9
 
 prepend_to_path $HOME/bin
