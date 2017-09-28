@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 function up
 	set -l INDEX 1
 
