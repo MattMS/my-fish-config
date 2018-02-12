@@ -24,4 +24,14 @@ set -x GOROOT /app/go/1.9
 
 prepend_to_path $HOME/bin
 
-append_to_path $GOPATH/bin $GOROOT/bin $HOME/.cabal/bin /opt/cabal/2.0/bin /opt/ghc/8.2.1/bin
+# Dart
+append_to_path /usr/lib/dart/bin
+
+# Go
+append_to_path $GOPATH/bin $GOROOT/bin
+
+# Haskell
+append_to_path $HOME/.cabal/bin /opt/cabal/2.0/bin /opt/ghc/8.2.1/bin
+
+# Rust
+append_to_path $HOME/.cargo/bin
